@@ -1,0 +1,19 @@
+name: guideline-app
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - streamlit
+    - sentence-transformers
+    - faiss-cpu
+    - pypdf2
+    - requests
+    - lxml
+    - openai
+    - numpy
+    - scipy
+    - matplotlib
+    - seaborn
