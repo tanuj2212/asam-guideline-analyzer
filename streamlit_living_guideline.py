@@ -29,7 +29,8 @@ with st.sidebar:
     smtp_username = st.text_input("SMTP username (email)")
     smtp_password = st.text_input("SMTP password or app password", type="password")
     sender_name = st.text_input("Sender name", value="Guideline Bot")
-    
+    reviewer_default_email = st.text_input("Reviewer Email (default)", help="Email who will receive the review link.")
+   ########################################### 
 
     st.markdown("---")
     st.subheader("Questions")
