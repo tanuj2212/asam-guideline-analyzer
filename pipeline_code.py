@@ -50,10 +50,13 @@ OPENAI_API_KEY = None  # set via UI set_openai_key()
 PUBMED_QUERY = (
     '"opioid-related disorders"[MeSH Terms] AND '
     '("2015/01/01"[PDAT] : "2019/12/31"[PDAT]) AND '
-    '("Clinical Trial, Phase I"[PT] OR '
+    '('
+    '"Clinical Trial"[PT] OR '
+    '"Clinical Trial, Phase I"[PT] OR '
     '"Clinical Trial, Phase II"[PT] OR '
     '"Clinical Trial, Phase III"[PT] OR '
-    '"Clinical Trial, Phase IV"[PT])'
+    '"Clinical Trial, Phase IV"[PT]'
+    ')'
 )
 PUBMED_BASE = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 EUROPEPMC_SEARCH = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
